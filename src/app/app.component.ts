@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tercera-clase-c';
+
+  public receive: number = 0;
+
+  autoIncrement(event:any){
+    // event.target;
+    // this.receive++;
+    console.log(event);
+    this.receive+= event;
+  }
+
 }
